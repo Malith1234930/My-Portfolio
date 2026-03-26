@@ -8,7 +8,7 @@
 
 
 a{
-    color: darkgreen;
+    color: #00ff88;
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a{
 
 .navbar ul li:hover a,
 .navbar ul li.active a{
-    color: lightgreen;
+    color: #00ff88;
 }
 
 .home {
@@ -88,7 +88,7 @@ a{
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: .7px lightgreen;
+    -webkit-text-stroke: .7px #00ff88;
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
@@ -104,8 +104,8 @@ a{
     content: attr(data-text);
     position: absolute;
     width: 0%;
-    border-right: 2px solid #11992e;
-    color: #11992e;
+    border-right: 2px solid #00ff88;
+    color: #00ff88;
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
@@ -140,18 +140,18 @@ a{
     padding: 14px 40px;
     border-radius: 50px;
 
-    color: lightgreen;
+    color: #00ff88;
     font-weight: 600;
     letter-spacing: 1px;
 
-    /* glass effect */
+
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
 
     border: 1px solid rgba(255, 255, 255, 0.2);
 
-    /* 3D depth */
+
     box-shadow:
         0 8px 20px rgba(0, 0, 0, 0.4),
         inset 0 2px 5px rgba(255, 255, 255, 0.2),
@@ -161,7 +161,7 @@ a{
     transition: all 0.3s ease;
 }
 
-/* TOP LIGHT REFLECTION */
+
 .btn::before {
     content: '';
     position: absolute;
@@ -180,7 +180,7 @@ a{
     pointer-events: none;
 }
 
-/* HOVER - 3D LIFT */
+
 .btn:hover {
     transform: translateY(-6px) scale(1.05);
 
@@ -191,7 +191,7 @@ a{
         inset 0 -3px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* ACTIVE - PRESS EFFECT */
+
 .btn:active {
     transform: translateY(2px) scale(0.97);
 
@@ -207,18 +207,18 @@ a{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #11992e;
+    border: 2px solid #00ff88;
     border-radius: 50%;
     font-size: 20px;
-    color: #11992e;
+    color: #00ff88;
     text-decoration: none:
     margin: 30px 15px 30px 0;
 }
 
 .sci a:hover {
-    background: #11992e;
+    background: #00ff88;
     color: black;
-    box-shadow: 0 0 20px #11992e;
+    box-shadow: 0 0 20px #00ff88;
 }
 
 .home-img .img-box {
@@ -285,7 +285,7 @@ a{
 
     border-radius: 50%;
 
-    /* clean look */
+
     mix-blend-mode: normal;
 
     transition: 0.4s ease;
@@ -318,4 +318,144 @@ a{
     }
 }
 
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.about-img img {
+    width: 400px;
+    border-radius: 20px;
+    border: 3px solid #00ff88;
+    box-shadow: 0 0 20px #00ff88;
+}
+
+.about-img img:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.about-content h1 {
+    font-size: 80px;
+}
+
+.about-content h1 span {
+    color: #00ff88;
+}
+
+.about-content h3 {
+    font-size: 60px;
+    margin: 40px 0;
+    color: #00ff88;
+}
+
+.about-content p {
+    margin: 35px 0;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00ff88;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #00ff88;
+    border: 2px solid #00ff88;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.skills {
+    padding: 50px 10%;
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 80px;
+}
+
+.title span {
+    color: #00ff88;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+}
+
+.skill-box {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #00ff88;
+    box-shadow: 0 0 10px #00ff88;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ff88;
+}
+
+.skill-box h3 {
+    margin-bottom: 10px;
+}
+
+.progress {
+    background: #222;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    background: #00ff88;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff88;
+}
 
